@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="annaBrundin.AdvancedCalculatorTest" time="0.003" tests="5" errors="0" skipped="0" failures="0">
+<testsuite name="annaBrundin.AdvancedCalculatorTest" time="0.068" tests="26" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.10+9"/>
@@ -45,7 +45,7 @@
     <property name="java.class.path" value="C:/Program Files/apache-maven-3.6.3-bin/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -e clean install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
     <property name="java.home" value="C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -64,9 +64,30 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="exponentiation on exponentiation(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.002"/>
+  <testcase name="percentageNegativePercent on percentageNegativePercent(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.014"/>
+  <testcase name="remainderNegativeDividend on remainderNegativeDividend(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.001"/>
+  <testcase name="negativeExponentiationZeroExponent on negativeExponentiationZeroExponent(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.006"/>
+  <testcase name="percentageZeroPercentage on percentageZeroPercentage(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.024"/>
+  <testcase name="remainderPositive on remainderPositive(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.003"/>
+  <testcase name="percentageNegativeValue on percentageNegativeValue(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.001"/>
+  <testcase name="negativeExponentiationZeroBase on negativeExponentiationZeroBase(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0"/>
+  <testcase name="positiveExponentiation on positiveExponentiation(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0"/>
   <testcase name="percentage on percentage(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0"/>
+  <testcase name="negativeExponentiation on negativeExponentiation(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0"/>
+  <testcase name="percentageZeroValue on percentageZeroValue(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0"/>
+  <testcase name="remainderZeroDivisor on remainderZeroDivisor(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0"/>
+  <testcase name="squareRootZeroValue on squareRootZeroValue(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0"/>
   <testcase name="absoluteValueOf on absoluteValueOf(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0"/>
-  <testcase name="remainder on remainder(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0"/>
-  <testcase name="squareRoot on squareRoot(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.001"/>
+  <testcase name="positiveExponentiationZeroExponent on positiveExponentiationZeroExponent(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.002"/>
+  <testcase name="remainderZeroDividend on remainderZeroDividend(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.001"/>
+  <testcase name="remainderNegativeDivisor on remainderNegativeDivisor(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.001"/>
+  <testcase name="squarePositive on squarePositive(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.001"/>
+  <testcase name="squareNegative on squareNegative(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0"/>
+  <testcase name="remainder on remainder(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.001"/>
+  <testcase name="positiveExponentiationNegativeExponent on positiveExponentiationNegativeExponent(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.001"/>
+  <testcase name="positiveExponentiationZeroBase on positiveExponentiationZeroBase(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0"/>
+  <testcase name="negativeExponentiationPositiveExponent on negativeExponentiationPositiveExponent(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.001"/>
+  <testcase name="remainderDoubleValue on remainderDoubleValue(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.005"/>
+  <testcase name="squareRoot on squareRoot(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0"/>
+  <testcase name="percentagePositive on percentagePositive(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.006"/>
 </testsuite>

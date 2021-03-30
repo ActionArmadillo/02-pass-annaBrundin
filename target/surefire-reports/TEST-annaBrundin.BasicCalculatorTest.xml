@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="annaBrundin.BasicCalculatorTest" time="0.046" tests="20" errors="0" skipped="0" failures="0">
+<testsuite name="annaBrundin.BasicCalculatorTest" time="0.031" tests="20" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.10+9"/>
@@ -45,7 +45,7 @@
     <property name="java.class.path" value="C:/Program Files/apache-maven-3.6.3-bin/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -e clean install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
     <property name="java.home" value="C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -64,24 +64,48 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="subtractionPositive on subtractionPositive(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.005"/>
-  <testcase name="subtractionNegative on subtractionNegative(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.002"/>
-  <testcase name="subtraction on subtraction(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.003"/>
-  <testcase name="multiplicationZeroValue1 on multiplicationZeroValue1(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.005"/>
-  <testcase name="multiplicationZeroValue2 on multiplicationZeroValue2(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.006"/>
+  <testcase name="subtractionPositive on subtractionPositive(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.008"/>
+  <testcase name="subtractionNegative on subtractionNegative(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0"/>
+  <testcase name="subtraction on subtraction(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.001"/>
+  <testcase name="multiplicationZeroValue1 on multiplicationZeroValue1(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0"/>
+  <testcase name="multiplicationZeroValue2 on multiplicationZeroValue2(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.001"/>
   <testcase name="additionZeroValue1 on additionZeroValue1(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0"/>
   <testcase name="additionZeroValue2 on additionZeroValue2(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0"/>
-  <testcase name="addition on addition(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0"/>
-  <testcase name="multiplicationPositive on multiplicationPositive(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.002"/>
-  <testcase name="additionPositive on additionPositive(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.002"/>
-  <testcase name="multiplicationNegative on multiplicationNegative(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.001"/>
-  <testcase name="additionNegative on additionNegative(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.001"/>
-  <testcase name="division on division(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.003"/>
-  <testcase name="subtractionZeroValue1 on subtractionZeroValue1(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.003"/>
-  <testcase name="subtractionZeroValue2 on subtractionZeroValue2(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.001"/>
-  <testcase name="multiplication on multiplication(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.003"/>
-  <testcase name="divisionPositive on divisionPositive(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.001"/>
-  <testcase name="divisionNegative on divisionNegative(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.001"/>
-  <testcase name="divisionZeroValue1 on divisionZeroValue1(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.005"/>
-  <testcase name="divisionZeroValue2 on divisionZeroValue2(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.002"/>
+  <testcase name="addition on addition(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.005"/>
+  <testcase name="multiplicationPositive on multiplicationPositive(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0"/>
+  <testcase name="additionPositive on additionPositive(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.001"/>
+  <testcase name="multiplicationNegative on multiplicationNegative(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0"/>
+  <testcase name="additionNegative on additionNegative(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0"/>
+  <testcase name="division on division(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0"/>
+  <testcase name="subtractionZeroValue1 on subtractionZeroValue1(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.002"/>
+  <testcase name="subtractionZeroValue2 on subtractionZeroValue2(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0"/>
+  <testcase name="multiplication on multiplication(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.001"/>
+  <testcase name="divisionPositive on divisionPositive(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0"/>
+  <testcase name="divisionNegative on divisionNegative(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0"/>
+  <testcase name="divisionZeroValue1 on divisionZeroValue1(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.001"/>
+  <testcase name="divisionZeroValue2 on divisionZeroValue2(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.011">
+    <failure message="expected:&lt;Infinity&gt; but was:&lt;NaN&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<Infinity> but was:<NaN>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:553)
+	at org.junit.Assert.assertEquals(Assert.java:683)
+	at annaBrundin.BasicCalculatorTest.divisionZeroValue2(BasicCalculatorTest.java:252)
+]]></failure>
+    <system-out><![CDATA[Value#1 63.0. Value#2 0.0. Result Infinity
+Value#1 57.0. Value#2 0.0. Result Infinity
+Value#1 70.0. Value#2 0.0. Result Infinity
+Value#1 26.0. Value#2 0.0. Result Infinity
+Value#1 64.0. Value#2 0.0. Result Infinity
+Value#1 86.0. Value#2 0.0. Result Infinity
+Value#1 74.0. Value#2 0.0. Result Infinity
+Value#1 72.0. Value#2 0.0. Result Infinity
+Value#1 17.0. Value#2 0.0. Result Infinity
+Value#1 82.0. Value#2 0.0. Result Infinity
+Value#1 23.0. Value#2 0.0. Result Infinity
+Value#1 21.0. Value#2 0.0. Result Infinity
+Value#1 52.0. Value#2 0.0. Result Infinity
+Value#1 46.0. Value#2 0.0. Result Infinity
+Value#1 0.0. Value#2 0.0. Result Infinity
+]]></system-out>
+  </testcase>
 </testsuite>

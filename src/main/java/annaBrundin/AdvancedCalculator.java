@@ -8,18 +8,12 @@ public class AdvancedCalculator extends BasicCalculator implements AdvancedOpera
 
     @Override
     public double positiveExponentiation(double base, double exponent) {
-        if(exponent < 0){
-            exponent *= -1;
-        }
-        return Math.pow(base, exponent);
+        return Math.pow(base, Math.abs(exponent));
     }
 
     @Override
     public double negativeExponentiation(double base, double exponent) {
-        if(exponent > 0){
-            exponent *= -1;
-        }
-        return Math.pow(base, exponent);
+        return Math.pow(base, Math.abs(exponent) * (-1));
     }
 
     @Override
@@ -29,6 +23,6 @@ public class AdvancedCalculator extends BasicCalculator implements AdvancedOpera
 
     @Override
     public double percentage(double value, double percent) {
-        return (value * (percent / 100));
+        return Math.abs((value / 100) * percent);
     }
 }
