@@ -39,17 +39,13 @@ public class Main {
         System.out.println("NEGATIVE EXPONENTIATION: " + base + " to the power of " + exponent + " = " + ac.negativeExponentiation(base, exponent));
 
         /* remainder */
-        int dividend = 200;
-        int divisor = 11;
+        double dividend = 20.5;
+        double divisor = 3.3;
         System.out.println("REMAINDER: " + dividend + " % " + divisor + " = " + ac.remainder(dividend, divisor));
 
         /* percentage */
         int percentage = 10;
         value = 538;
         System.out.println("PERCENTAGE: " + percentage + "% of " + value + " = " + ac.percentage(value, percentage));
-
-        /* absoluteValueOf */
-        int n = -12;
-        System.out.println("ABSOLUTE VALUE of " + n + ":\n|n| = " + ac.absoluteValueOf(n));
     }
 }

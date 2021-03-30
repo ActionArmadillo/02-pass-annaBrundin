@@ -31,9 +31,4 @@ public class AdvancedCalculator extends BasicCalculator implements AdvancedOpera
     public double percentage(double value, double percent) {
         return (value * (percent / 100));
     }
-
-    @Override
-    public int absoluteValueOf(int n) {
-        return Math.abs(n);
-    }
 }
