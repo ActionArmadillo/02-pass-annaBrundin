@@ -28,10 +28,15 @@ public class Main {
         int value = 15;
         System.out.println("SQUARE ROOT of " + value + " = " + ac.squareRoot(value));
 
-        /* exponentiation */
+        /* positive exponentiation */
         int base = 10;
         int exponent = 3;
-        System.out.println("EXPONENTIATION: " + base + " to the power of " + exponent + " = " + ac.exponentiation(base, exponent));
+        System.out.println("POSITIVE EXPONENTIATION: " + base + " to the power of " + exponent + " = " + ac.positiveExponentiation(base, exponent));
+
+        /* negative exponentiation */
+        base = 10;
+        exponent = -3;
+        System.out.println("NEGATIVE EXPONENTIATION: " + base + " to the power of " + exponent + " = " + ac.negativeExponentiation(base, exponent));
 
         /* remainder */
         int dividend = 200;
