@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Main.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">02_pass_annaBrundin$02Assignment.exec</a> &gt; <a href="index.source.html" class="el_package">annaBrundin</a> &gt; <span class="el_source">Main.java</span></div><h1>Main.java</h1><pre class="source lang-java linenums">package annaBrundin;
+
+<span class="nc" id="L3">public class Main {</span>
+    public static void main(String[] args) {
+<span class="nc" id="L5">        System.out.println(&quot;-----------------------\n- Basic calculations -\n-----------------------&quot;);</span>
+<span class="nc" id="L6">        basicCalculations(16, 3);</span>
+<span class="nc" id="L7">        System.out.println(&quot;-------------------------\n- Advanced calculations -\n-------------------------&quot;);</span>
+<span class="nc" id="L8">        advancedCalculations();</span>
+<span class="nc" id="L9">    }</span>
+
+    public static void basicCalculations(int value1, int value2){
+<span class="nc" id="L12">        BasicCalculator bc = new BasicCalculator();</span>
+
+        /* addition */
+<span class="nc" id="L15">        System.out.println(&quot;SUM (+) of &quot; + value1 + &quot; and &quot; + value2 + &quot; = &quot; + bc.addition(value1, value2));</span>
+        /* division */
+<span class="nc" id="L17">        System.out.println(&quot;DIFFERENCE (-) of &quot; + value1 + &quot; and &quot; + value2 + &quot; = &quot; + bc.subtraction(value1, value2));</span>
+        /* multiplication */
+<span class="nc" id="L19">        System.out.println(&quot;PRODUCT (*) of &quot; + value1 + &quot; and &quot; + value2 + &quot; = &quot; + bc.multiplication(value1, value2));</span>
+        /* division */
+<span class="nc" id="L21">        System.out.println(&quot;DIVIDEND (÷) of &quot; + value1 + &quot; by &quot; + value2 + &quot; = &quot; + bc.division(value1, value2));</span>
+<span class="nc" id="L22">    }</span>
+
+    public static void advancedCalculations(){
+<span class="nc" id="L25">        AdvancedCalculator ac = new AdvancedCalculator();</span>
+
+        /* squareRoot */
+<span class="nc" id="L28">        int value = 15;</span>
+<span class="nc" id="L29">        System.out.println(&quot;SQUARE ROOT of &quot; + value + &quot; = &quot; + ac.squareRoot(value));</span>
+
+        /* exponentiation */
+<span class="nc" id="L32">        int base = 10;</span>
+<span class="nc" id="L33">        int exponent = 3;</span>
+<span class="nc" id="L34">        System.out.println(&quot;EXPONENTIATION: &quot; + base + &quot; to the power of &quot; + exponent + &quot; = &quot; + ac.exponentiation(base, exponent));</span>
+
+        /* remainder */
+<span class="nc" id="L37">        int dividend = 200;</span>
+<span class="nc" id="L38">        int divisor = 11;</span>
+<span class="nc" id="L39">        System.out.println(&quot;REMAINDER: &quot; + dividend + &quot; % &quot; + divisor + &quot; = &quot; + ac.remainder(dividend, divisor));</span>
+
+        /* percentage */
+<span class="nc" id="L42">        int percentage = 10;</span>
+<span class="nc" id="L43">        value = 538;</span>
+<span class="nc" id="L44">        System.out.println(&quot;PERCENTAGE: &quot; + percentage + &quot;% of &quot; + value + &quot; = &quot; + ac.percentage(value, percentage));</span>
+
+        /* absoluteValueOf */
+<span class="nc" id="L47">        int n = -12;</span>
+<span class="nc" id="L48">        System.out.println(&quot;ABSOLUTE VALUE of &quot; + n + &quot;:\n|n| = &quot; + ac.absoluteValueOf(n));</span>
+<span class="nc" id="L49">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

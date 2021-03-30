@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>BasicCalculatorTest.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">02_pass_annaBrundin$02Assignment.exec</a> &gt; <a href="index.source.html" class="el_package">annaBrundin</a> &gt; <span class="el_source">BasicCalculatorTest.java</span></div><h1>BasicCalculatorTest.java</h1><pre class="source lang-java linenums">package annaBrundin;
+
+import org.junit.Test;
+
+import java.util.Random;
+
+import static org.junit.Assert.*;
+
+<span class="fc" id="L9">public class BasicCalculatorTest {</span>
+<span class="fc" id="L10">    BasicCalculator bc = new BasicCalculator();</span>
+<span class="fc" id="L11">    Random random = new Random();</span>
+<span class="fc" id="L12">    int MAX = 100;</span>
+<span class="fc" id="L13">    int MIN = -100;</span>
+
+    @Test
+    public void addition(){
+<span class="fc" id="L17">        double value1 = random.nextInt();</span>
+<span class="fc" id="L18">        double value2 = random.nextInt();</span>
+<span class="fc" id="L19">        double result = value1 + value2;</span>
+
+<span class="fc" id="L21">        assertEquals(result, bc.addition(value1, value2), 0);</span>
+<span class="fc" id="L22">    }</span>
+    @Test
+    public void additionZeroValue1(){
+<span class="fc" id="L25">        double value1 = 0.0;</span>
+<span class="fc" id="L26">        double value2 = random.nextInt();</span>
+<span class="fc" id="L27">        double result = value1 + value2;</span>
+
+<span class="fc" id="L29">        assertEquals(result, bc.addition(value1, value2), 0);</span>
+<span class="fc" id="L30">    }</span>
+    @Test
+    public void additionZeroValue2(){
+<span class="fc" id="L33">        double value1 = random.nextInt();</span>
+<span class="fc" id="L34">        double value2 = 0.0;</span>
+<span class="fc" id="L35">        double result = value1 + value2;</span>
+
+<span class="fc" id="L37">        assertEquals(result, bc.addition(value1, value2), 0);</span>
+<span class="fc" id="L38">    }</span>
+    @Test
+    public void additionNegative(){
+<span class="fc bfc" id="L41" title="All 2 branches covered.">        for(int i = 0; i &lt; 25; i++) {</span>
+<span class="fc" id="L42">            double value1 = random.nextInt(MAX - MIN) + MIN;</span>
+<span class="fc" id="L43">            double value2 = random.nextInt(MAX - MIN) + MIN;</span>
+
+<span class="fc bfc" id="L45" title="All 2 branches covered.">            if (value1 &gt; 0) {</span>
+<span class="fc" id="L46">                value1 *= -1;</span>
+            }
+
+<span class="fc" id="L49">            double result = value1 + value2;</span>
+<span class="fc" id="L50">            System.out.println(&quot;Value#1 &quot; + value1 + &quot;. Value#2 &quot; + value2 + &quot;. Result &quot; + result);</span>
+
+<span class="fc" id="L52">            assertEquals(result, bc.addition(value1, value2), 0);</span>
+        }
+<span class="fc" id="L54">    }</span>
+    @Test
+    public void additionPositive(){
+<span class="fc bfc" id="L57" title="All 2 branches covered.">        for(int i = 0; i &lt; 25; i++) {</span>
+<span class="fc" id="L58">            double value1 = random.nextInt(MAX - MIN) + MIN;</span>
+<span class="fc" id="L59">            double value2 = random.nextInt(MAX - MIN) + MIN;</span>
+
+<span class="fc bfc" id="L61" title="All 2 branches covered.">            if (value1 &lt; 0) {</span>
+<span class="fc" id="L62">                value1 *= -1;</span>
+            }
+<span class="fc bfc" id="L64" title="All 2 branches covered.">            if (value2 &lt; 0) {</span>
+<span class="fc" id="L65">                value2 *= -1;</span>
+            }
+
+<span class="fc" id="L68">            double result = value1 + value2;</span>
+<span class="fc" id="L69">            System.out.println(&quot;Value#1 &quot; + value1 + &quot;. Value#2 &quot; + value2 + &quot;. Result &quot; + result);</span>
+
+<span class="fc" id="L71">            assertEquals(result, bc.addition(value1, value2), 0);</span>
+        }
+<span class="fc" id="L73">    }</span>
+
+    @Test
+    public void subtraction(){
+<span class="fc bfc" id="L77" title="All 2 branches covered.">        for(int i = 0; i &lt; 25; i++) {</span>
+<span class="fc" id="L78">            double value1 = random.nextInt(MAX - MIN) + MIN;</span>
+<span class="fc" id="L79">            double value2 = random.nextInt(MAX - MIN) + MIN;</span>
+<span class="fc" id="L80">            double result = value1 - value2;</span>
+<span class="fc" id="L81">            System.out.println(&quot;Value#1 &quot; + value1 + &quot;. Value#2 &quot; + value2 + &quot;. Result &quot; + result);</span>
+
+<span class="fc" id="L83">            assertEquals(result, bc.subtraction(value1, value2), 0);</span>
+        }
+<span class="fc" id="L85">    }</span>
+    @Test
+    public void subtractionZeroValue1(){
+<span class="fc bfc" id="L88" title="All 2 branches covered.">        for(int i = 0; i &lt; 25; i++) {</span>
+<span class="fc" id="L89">            double value1 = 0.0;</span>
+<span class="fc" id="L90">            double value2 = random.nextInt(MAX - MIN) + MIN;</span>
+<span class="fc" id="L91">            double result = value1 - value2;</span>
+<span class="fc" id="L92">            System.out.println(&quot;Value#1 &quot; + value1 + &quot;. Value#2 &quot; + value2 + &quot;. Result &quot; + result);</span>
+
+<span class="fc" id="L94">            assertEquals(value2 * (-1), bc.subtraction(value1, value2), 0);</span>
+        }
+<span class="fc" id="L96">    }</span>
+    @Test
+    public void subtractionZeroValue2(){
+<span class="fc bfc" id="L99" title="All 2 branches covered.">        for(int i = 0; i &lt; 25; i++) {</span>
+<span class="fc" id="L100">            double value1 = random.nextInt(MAX - MIN) + MIN;</span>
+<span class="fc" id="L101">            double value2 = 0.0;</span>
+<span class="fc" id="L102">            double result = value1 - value2;</span>
+<span class="fc" id="L103">            System.out.println(&quot;Value#1 &quot; + value1 + &quot;. Value#2 &quot; + value2 + &quot;. Result &quot; + result);</span>
+
+<span class="fc" id="L105">            assertEquals(value1, bc.subtraction(value1, value2), 0);</span>
+        }
+<span class="fc" id="L107">    }</span>
+    @Test
+    public void subtractionNegative(){
+<span class="fc bfc" id="L110" title="All 2 branches covered.">        for(int i = 0; i &lt; 25; i++) {</span>
+<span class="fc" id="L111">            double value1 = random.nextInt(MAX - MIN) + MIN;</span>
+<span class="fc" id="L112">            double value2 = random.nextInt(MAX - MIN) + MIN;</span>
+
+<span class="fc bfc" id="L114" title="All 2 branches covered.">            if (value1 &gt; 0) {</span>
+<span class="fc" id="L115">                value1 *= -1;</span>
+            }
+
+<span class="fc" id="L118">            double result = value1 - value2;</span>
+<span class="fc" id="L119">            System.out.println(&quot;Value#1 &quot; + value1 + &quot;. Value#2 &quot; + value2 + &quot;. Result &quot; + result);</span>
+
+<span class="fc" id="L121">            assertEquals(result, bc.subtraction(value1, value2), 0);</span>
+        }
+<span class="fc" id="L123">    }</span>
+    @Test
+    public void subtractionPositive(){
+<span class="fc bfc" id="L126" title="All 2 branches covered.">        for(int i = 0; i &lt; 25; i++) {</span>
+<span class="fc" id="L127">            double value1 = random.nextInt(MAX - MIN) + MIN;</span>
+<span class="fc" id="L128">            double value2 = random.nextInt(MAX - MIN) + MIN;</span>
+
+<span class="fc bfc" id="L130" title="All 2 branches covered.">            if (value1 &lt; 0) {</span>
+<span class="fc" id="L131">                value1 *= -1;</span>
+            }
+<span class="fc bfc" id="L133" title="All 2 branches covered.">            if (value2 &lt; 0) {</span>
+<span class="fc" id="L134">                value2 *= -1;</span>
+            }
+
+<span class="fc" id="L137">            double result = value1 - value2;</span>
+<span class="fc" id="L138">            System.out.println(&quot;Value#1 &quot; + value1 + &quot;. Value#2 &quot; + value2 + &quot;. Result &quot; + result);</span>
+
+<span class="fc" id="L140">            assertEquals(result, bc.subtraction(value1, value2), 0);</span>
+        }
+<span class="fc" id="L142">    }</span>
+
+    @Test
+    public void multiplication(){
+<span class="fc bfc" id="L146" title="All 2 branches covered.">        for (int i = 0; i &lt; 25; i++) {</span>
+<span class="fc" id="L147">            double value1 = random.nextInt(MAX - MIN) + MIN;</span>
+<span class="fc" id="L148">            double value2 = random.nextInt(MAX - MIN) + MIN;</span>
+<span class="fc" id="L149">            double result = value1 * value2;</span>
+
+<span class="fc" id="L151">            System.out.println(&quot;Value#1 &quot; + value1 + &quot;. Value#2 &quot; + value2 + &quot;. Result &quot; + result);</span>
+
+<span class="fc" id="L153">            assertEquals(result, bc.multiplication(value1, value2), 0);</span>
+        }
+<span class="fc" id="L155">    }</span>
+    @Test
+    public void multiplicationZeroValue1(){
+<span class="fc bfc" id="L158" title="All 2 branches covered.">        for(int i = 0; i &lt; 25; i++) {</span>
+<span class="fc" id="L159">            double value1 = 0.0;</span>
+<span class="fc" id="L160">            double value2 = random.nextInt(MAX - MIN) + MIN;</span>
+<span class="fc" id="L161">            double result = value1 * value2;</span>
+<span class="fc" id="L162">            System.out.println(&quot;Value#1 &quot; + value1 + &quot;. Value#2 &quot; + value2 + &quot;. Result &quot; + result);</span>
+
+<span class="fc" id="L164">            assertEquals(0, bc.multiplication(value1, value2), 0);</span>
+        }
+<span class="fc" id="L166">    }</span>
+    @Test
+    public void multiplicationZeroValue2(){
+<span class="fc bfc" id="L169" title="All 2 branches covered.">        for(int i = 0; i &lt; 25; i++) {</span>
+<span class="fc" id="L170">            double value1 = random.nextInt(MAX - MIN) + MIN;</span>
+<span class="fc" id="L171">            double value2 = 0.0;</span>
+<span class="fc" id="L172">            double result = value1 * value2;</span>
+<span class="fc" id="L173">            System.out.println(&quot;Value#1 &quot; + value1 + &quot;. Value#2 &quot; + value2 + &quot;. Result &quot; + result);</span>
+
+<span class="fc" id="L175">            assertEquals(0, bc.multiplication(value1, value2), 0);</span>
+        }
+<span class="fc" id="L177">    }</span>
+    @Test
+    public void multiplicationNegative(){
+<span class="fc bfc" id="L180" title="All 2 branches covered.">        for(int i = 0; i &lt; 25; i++) {</span>
+<span class="fc" id="L181">            double value1 = random.nextInt(MAX - MIN) + MIN;</span>
+<span class="fc" id="L182">            double value2 = random.nextInt(MAX - MIN) + MIN;</span>
+
+<span class="fc bfc" id="L184" title="All 2 branches covered.">            if (value1 &gt; 0) {</span>
+<span class="fc" id="L185">                value1 *= -1;</span>
+            }
+
+<span class="fc" id="L188">            double result = value1 * value2;</span>
+<span class="fc" id="L189">            System.out.println(&quot;Value#1 &quot; + value1 + &quot;. Value#2 &quot; + value2 + &quot;. Result &quot; + result);</span>
+
+<span class="fc" id="L191">            assertEquals(result, bc.multiplication(value1, value2), 0);</span>
+        }
+<span class="fc" id="L193">    }</span>
+    @Test
+    public void multiplicationPositive(){
+<span class="fc bfc" id="L196" title="All 2 branches covered.">        for(int i = 0; i &lt; 25; i++) {</span>
+<span class="fc" id="L197">            double value1 = random.nextInt(MAX - MIN) + MIN;</span>
+<span class="fc" id="L198">            double value2 = random.nextInt(MAX - MIN) + MIN;</span>
+
+<span class="fc bfc" id="L200" title="All 2 branches covered.">            if (value1 &lt; 0) {</span>
+<span class="fc" id="L201">                value1 *= -1;</span>
+            }
+<span class="fc bfc" id="L203" title="All 2 branches covered.">            if (value2 &lt; 0) {</span>
+<span class="fc" id="L204">                value2 *= -1;</span>
+            }
+
+<span class="fc" id="L207">            double result = value1 * value2;</span>
+<span class="fc" id="L208">            System.out.println(&quot;Value#1 &quot; + value1 + &quot;. Value#2 &quot; + value2 + &quot;. Result &quot; + result);</span>
+
+<span class="fc" id="L210">            assertEquals(result, bc.multiplication(value1, value2), 0);</span>
+        }
+<span class="fc" id="L212">    }</span>
+
+    @Test
+    public void division(){
+<span class="fc bfc" id="L216" title="All 2 branches covered.">        for (int i = 0; i &lt; 25; i++) {</span>
+<span class="fc" id="L217">            double value1 = random.nextInt(MAX - MIN) + MIN;</span>
+<span class="fc" id="L218">            double value2 = random.nextInt(MAX - MIN) + MIN;</span>
+<span class="fc" id="L219">            double result = value1 / value2;</span>
+
+<span class="fc" id="L221">            System.out.println(&quot;Value#1 &quot; + value1 + &quot;. Value#2 &quot; + value2 + &quot;. Result &quot; + result);</span>
+
+<span class="fc" id="L223">            assertEquals(result, bc.division(value1, value2), 0);</span>
+        }
+<span class="fc" id="L225">    }</span>
+    @Test
+    public void divisionZeroValue1(){
+<span class="fc bfc" id="L228" title="All 2 branches covered.">        for(int i = 0; i &lt; 25; i++) {</span>
+<span class="fc" id="L229">            double value1 = 0.0;</span>
+<span class="fc" id="L230">            double value2 = random.nextInt(MAX - MIN) + MIN;</span>
+<span class="pc bpc" id="L231" title="1 of 2 branches missed.">            if(value2 == 0.0){</span>
+<span class="nc" id="L232">                value2 += 11.0;</span>
+            }
+<span class="fc" id="L234">            double result = value1 / value2;</span>
+<span class="fc" id="L235">            System.out.println(&quot;Value#1 &quot; + value1 + &quot;. Value#2 &quot; + value2 + &quot;. Result &quot; + result);</span>
+
+<span class="fc" id="L237">            assertEquals(0, bc.division(value1, value2), 0);</span>
+        }
+<span class="fc" id="L239">    }</span>
+    @Test
+    public void divisionZeroValue2(){
+<span class="fc bfc" id="L242" title="All 2 branches covered.">        for(int i = 0; i &lt; 25; i++) {</span>
+<span class="fc" id="L243">            double value1 = random.nextInt(MAX - MIN) + MIN;</span>
+<span class="fc bfc" id="L244" title="All 2 branches covered.">            if(value1 &lt; 0){</span>
+<span class="fc" id="L245">                value1 *= -1;</span>
+            }
+
+<span class="fc" id="L248">            double value2 = 0.0;</span>
+<span class="fc" id="L249">            double result = Double.POSITIVE_INFINITY;</span>
+<span class="fc" id="L250">            System.out.println(&quot;Value#1 &quot; + value1 + &quot;. Value#2 &quot; + value2 + &quot;. Result &quot; + result);</span>
+
+<span class="fc" id="L252">            assertEquals(result, bc.division(value1, value2), 0);</span>
+
+        }
+<span class="fc" id="L255">    }</span>
+    @Test
+    public void divisionNegative(){
+<span class="fc bfc" id="L258" title="All 2 branches covered.">        for(int i = 0; i &lt; 25; i++) {</span>
+<span class="fc" id="L259">            double value1 = random.nextInt(MAX - MIN) + MIN;</span>
+<span class="fc" id="L260">            double value2 = random.nextInt(MAX - MIN) + MIN;</span>
+
+<span class="fc bfc" id="L262" title="All 2 branches covered.">            if (value1 &gt; 0) {</span>
+<span class="fc" id="L263">                value1 *= -1;</span>
+            }
+
+<span class="fc" id="L266">            double result = value1 / value2;</span>
+<span class="fc" id="L267">            System.out.println(&quot;Value#1 &quot; + value1 + &quot;. Value#2 &quot; + value2 + &quot;. Result &quot; + result);</span>
+
+<span class="fc" id="L269">            assertEquals(result, bc.division(value1, value2), 0);</span>
+        }
+<span class="fc" id="L271">    }</span>
+    @Test
+    public void divisionPositive(){
+<span class="fc bfc" id="L274" title="All 2 branches covered.">        for(int i = 0; i &lt; 25; i++) {</span>
+<span class="fc" id="L275">            double value1 = random.nextInt(MAX - MIN) + MIN;</span>
+<span class="fc" id="L276">            double value2 = random.nextInt(MAX - MIN) + MIN;</span>
+
+<span class="fc bfc" id="L278" title="All 2 branches covered.">            if (value1 &lt; 0) {</span>
+<span class="fc" id="L279">                value1 *= -1;</span>
+            }
+<span class="fc bfc" id="L281" title="All 2 branches covered.">            if (value2 &lt; 0) {</span>
+<span class="fc" id="L282">                value2 *= -1;</span>
+            }
+
+<span class="fc" id="L285">            double result = value1 / value2;</span>
+<span class="fc" id="L286">            System.out.println(&quot;Value#1 &quot; + value1 + &quot;. Value#2 &quot; + value2 + &quot;. Result &quot; + result);</span>
+
+<span class="fc" id="L288">            assertEquals(result, bc.division(value1, value2), 0);</span>
+        }
+<span class="fc" id="L290">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
