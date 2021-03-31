@@ -257,16 +257,14 @@ public class BasicCalculatorTest {
     public void divisionNegative(){
         for(int i = 0; i < 25; i++) {
             double value1 = random.nextInt(MAX - MIN) + MIN;
-            double value2 = random.nextInt(MAX - MIN) + MIN;
-
-            if (value1 > 0) {
-                value1 *= -1;
+            double value2 = Math.abs(random.nextInt(MAX - MIN) + MIN) * (-1);
+            double answer = value1/value2;
+            double finalResult = answer;
+            if((answer == Double.NaN) || (answer == Double.POSITIVE_INFINITY) || (answer == Double.NEGATIVE_INFINITY)){
+                finalResult = answer;
             }
 
-            double result = value1 / value2;
-            System.out.println("Value#1 " + value1 + ". Value#2 " + value2 + ". Result " + result);
-
-            assertEquals(result, bc.division(value1, value2), 0);
+            assertEquals(finalResult, bc.division(value1, value2), 0);
         }
     }
     @Test
