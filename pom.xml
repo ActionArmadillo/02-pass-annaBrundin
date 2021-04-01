@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>annaBrundin</groupId>
@@ -16,10 +16,9 @@
   <properties>
     <junit.version>4.12</junit.version>
     <java.version>1.8</java.version>
-    <jacoco.version>0.7.7.201606060606</jacoco.version>
+    <jacoco.version>0.8.5</jacoco.version>
     <surefire.version>2.17</surefire.version>
     <testng.version>6.8.8</testng.version>
-
   </properties>
 
   <!-- here i add all my dependencies -->
@@ -83,11 +82,6 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <configuration>
-          <forkCount>3</forkCount>
-          <reuseForks>true</reuseForks>
-          <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
-        </configuration>
         <version>${surefire.version}</version>
       </plugin>
 

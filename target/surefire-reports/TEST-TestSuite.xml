@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestSuite" time="0.105" tests="45" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.10+9"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin"/>
+    <property name="user.country.format" value="SE"/>
+    <property name="maven.multiModuleProjectDirectory" value="F:/Mjukvarutestare 2020/programmering för testare/Assignment02/02-pass-annaBrundin"/>
+    <property name="java.vm.vendor" value="AdoptOpenJDK"/>
+    <property name="java.vendor.url" value="https://adoptopenjdk.net/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="F:\Mjukvarutestare 2020\programmering för testare\Assignment02\02-pass-annaBrundin"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.10+9"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\MECHAL~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:/Program Files/apache-maven-3.6.3-bin/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\mechalynx\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\mechalynx\bin;C:\Python38\Scripts;C:\Python38;C:\Program Files\AdoptOpenJDK\jdk-11.0.7.10-openj9\bin;C:\app\mechalynx\product\18.0.0\dbhomeXE\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\dotnet;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.6.3-bin\bin;C:\Users\mechalynx\AppData\Local\Microsoft\WindowsApps;C:\Users\mechalynx\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\mechalynx\AppData\Roaming\npm;C:\Users\mechalynx\AppData\Local\GitHubDesktop\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
+    <property name="maven.conf" value="C:/Program Files/apache-maven-3.6.3-bin/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:/Program Files/apache-maven-3.6.3-bin/lib/jansi-native"/>
+    <property name="user.home" value="C:\Users\mechalynx"/>
+    <property name="user.timezone" value="Europe/Berlin"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="mechalynx"/>
+    <property name="java.class.path" value="C:/Program Files/apache-maven-3.6.3-bin/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install -U"/>
+    <property name="java.home" value="C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language.format" value="sv"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.10"/>
+    <property name="java.vendor" value="AdoptOpenJDK"/>
+    <property name="maven.home" value="C:\Program Files\apache-maven-3.6.3-bin"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2021-01-19"/>
+    <property name="java.vendor.url.bug" value="https://github.com/AdoptOpenJDK/openjdk-support/issues"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="AdoptOpenJDK"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="subtractionPositive on subtractionPositive(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.019"/>
+  <testcase name="subtractionNegative on subtractionNegative(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.001"/>
+  <testcase name="subtraction on subtraction(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0"/>
+  <testcase name="multiplicationZeroValue1 on multiplicationZeroValue1(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0"/>
+  <testcase name="multiplicationZeroValue2 on multiplicationZeroValue2(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.001"/>
+  <testcase name="additionZeroValue1 on additionZeroValue1(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0"/>
+  <testcase name="additionZeroValue2 on additionZeroValue2(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0"/>
+  <testcase name="addition on addition(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0"/>
+  <testcase name="multiplicationPositive on multiplicationPositive(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.005"/>
+  <testcase name="additionPositive on additionPositive(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0"/>
+  <testcase name="multiplicationNegative on multiplicationNegative(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.001"/>
+  <testcase name="additionNegative on additionNegative(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0"/>
+  <testcase name="division on division(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.002"/>
+  <testcase name="subtractionZeroValue1 on subtractionZeroValue1(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0"/>
+  <testcase name="subtractionZeroValue2 on subtractionZeroValue2(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.006"/>
+  <testcase name="multiplication on multiplication(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0"/>
+  <testcase name="divisionPositive on divisionPositive(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.002"/>
+  <testcase name="divisionNegative on divisionNegative(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0"/>
+  <testcase name="divisionZeroValue1 on divisionZeroValue1(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.003"/>
+  <testcase name="divisionZeroValue2 on divisionZeroValue2(annaBrundin.BasicCalculatorTest)" classname="annaBrundin.BasicCalculatorTest" time="0.001"/>
+  <testcase name="percentageNegativePercent on percentageNegativePercent(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.002"/>
+  <testcase name="remainderNegativeDividend on remainderNegativeDividend(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.02"/>
+  <testcase name="negativeExponentiationZeroExponent on negativeExponentiationZeroExponent(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.001"/>
+  <testcase name="percentageZeroPercentage on percentageZeroPercentage(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.005"/>
+  <testcase name="remainderPositive on remainderPositive(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.005"/>
+  <testcase name="percentageNegativeValue on percentageNegativeValue(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.004"/>
+  <testcase name="negativeExponentiationZeroBase on negativeExponentiationZeroBase(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0"/>
+  <testcase name="percentage on percentage(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0"/>
+  <testcase name="negativeExponentiation on negativeExponentiation(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0"/>
+  <testcase name="percentageZeroValue on percentageZeroValue(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.002"/>
+  <testcase name="remainderZeroDivisor on remainderZeroDivisor(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0"/>
+  <testcase name="squareRootZeroValue on squareRootZeroValue(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.001"/>
+  <testcase name="absoluteValueOf on absoluteValueOf(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0"/>
+  <testcase name="positiveExponentiationZeroExponent on positiveExponentiationZeroExponent(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.001"/>
+  <testcase name="remainderZeroDividend on remainderZeroDividend(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.006"/>
+  <testcase name="remainderNegativeDivisor on remainderNegativeDivisor(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.005"/>
+  <testcase name="squarePositive on squarePositive(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.001"/>
+  <testcase name="squareNegative on squareNegative(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0"/>
+  <testcase name="remainder on remainder(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.007"/>
+  <testcase name="positiveExponentiationNegativeExponent on positiveExponentiationNegativeExponent(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0"/>
+  <testcase name="positiveExponentiationZeroBase on positiveExponentiationZeroBase(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.001"/>
+  <testcase name="negativeExponentiationPositiveExponent on negativeExponentiationPositiveExponent(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0"/>
+  <testcase name="remainderDoubleValue on remainderDoubleValue(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.001"/>
+  <testcase name="squareRoot on squareRoot(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0"/>
+  <testcase name="percentagePositive on percentagePositive(annaBrundin.AdvancedCalculatorTest)" classname="annaBrundin.AdvancedCalculatorTest" time="0.002"/>
+</testsuite>
